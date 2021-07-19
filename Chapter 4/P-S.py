@@ -1,28 +1,41 @@
-# Write a python program get the 7 fruits name as input and append it into a fruit list
+# Q-1 Write a python program to add 7 fruits in the python list given by the user input
+'''
 
-# Fruit_1 = input("Enter here the fruit name\n")
-# Fruit_2 = input("Enter here the fruit name\n")
-# Fruit_3 = input("Enter here the fruit name\n")
-# Fruit_4 = input("Enter here the fruit name\n")
-# Fruit_5 = input("Enter here the fruit name\n")
-# Fruit_6 = input("Enter here the fruit name\n")
-# Fruit_7 = input("Enter here the fruit name\n")
+Fruit_list = []
 
-# Fruit_list = [Fruit_1,Fruit_2,Fruit_3,Fruit_4,Fruit_5,Fruit_6,Fruit_7]
+for i in range(7):
+    inp = input("Enter the Fruit name\n")
 
-# print(Fruit_list)
+    Fruit_list.append(inp)
 
-# Write a python program which take marks of 6 student and sort them
 
-Student_1 = int(input("Enter here the Student name\n"))
-Student_2 = int(input("Enter here the Student name\n"))
-Student_3 = int(input("Enter here the Student name\n"))
-Student_4 = int(input("Enter here the Student name\n"))
-Student_5 = int(input("Enter here the Student name\n"))
-Student_6 = int(input("Enter here the Student name\n"))
+print(Fruit_list)
 
-Mark_List = [Student_1,Student_2,Student_3,Student_4,Student_5,Student_6]
+'''
 
-sorted_list = Mark_List.sort()
+# Q-2 Write a program to take the marks of 6 students and sorted them in the list
 
-print(Mark_List.sort(reverse=True))
+'''
+
+Student_list = []
+
+for i in range(6):
+
+    inp = input("Enter the Studnet Marks\n")
+
+    Student_list.append(inp)
+
+Student_list.sort()
+print(Student_list)
+
+'''
+
+# Q-4 Write a python program to sum the all numbers in the pyton list
+
+
+
+# Q-5 Write a python program to find no of 0 in the tuple
+
+tuple = (7,0,8,0,0,9)
+
+print(tuple.count(0))

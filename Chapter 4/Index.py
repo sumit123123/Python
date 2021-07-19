@@ -55,4 +55,37 @@ My_List_1.insert(3, appending_object)
 .remove remove the element value given in the parameter
 '''
 
-print(My_List_1)
+# print(My_List_1)
+
+
+
+'''
+Tuple
+
+Tuple is a data type in which you can store data and is immutable
+
+Tuple is the fastest arrey in python
+
+Initializeing tuple is like these: - ()
+
+'''
+
+My_Tuple = (1,2,3,4,5,6,6,5,4,3,2,1)
+
+# print(My_Tuple)
+
+
+print(My_Tuple.index(5))
+
+'''
+If you try to change the tuple you will get TypeError: 
+
+'tuple' object does not support item assignment
+
+here item assignment is changing
+
+Here the count function give the number of repeated object in tuple or list
+
+Here the index function give the given number index in the Data type
+'''
+
