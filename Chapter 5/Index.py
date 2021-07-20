@@ -55,16 +55,68 @@ a = set()
 # Adding items in the set
 
 a.add(72)
+a.add(45)
+a.add(75)
+a.add(1)
 # print(a)
 
 # We cannot add a list inside the set but we can add the tuple inside the set and dict also.
 
 # Mutable objects can only add into a set a list and a dict can be changed so 
 
-import pyttsx3
+# Get the length of the set
 
-engine = pyttsx3.init()
+# print(len(a))
 
-engine.say("ahahahahahahahahahahahahahahahahahahahahahahahahahahahaha")
+# print(a)
 
-engine.runAndWait()
+# a.remove(2)
+# Removes the items from the set
+
+# Throw error like this when item in not their in the set
+# KeyError: 2
+# print(a)
+
+# print(a)
+
+# print(a.pop())
+# Removes a random element
+
+# print(a)
+
+# a.clear()
+# clear the items
+
+# print(a)
+
+
+"""
+Medium level Sets in mathematics
+
+1. Union
+The union() method returns a set that contains all items from the original set, and all items from the specified set(s)
+
+in set the item is in order but when we use union fucntion it get unordered
+
+syntex shown below
+"""
+
+set_2 = {-111,-112,113}
+
+z = set.union(a,set_2)
+
+# print(z)
+
+x = {"Apple","Microsoft","Amazon"}
+
+y = {"NASA","Amazon","Space-x","More-Earth","Deep Mining"}
+
+A = x.intersection(y)
+
+print(A)
+
+"""
+Intersetion is a method in which you can interset two element and inside that elements if any items is similar then you get it in a return
+
+syntex show above
+"""
