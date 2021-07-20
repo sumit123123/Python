@@ -23,7 +23,7 @@ Properties of python dict
 My_dict = {"Name":"Sumit"}
 
 
-# Print the list in the output form {'Name': 'Sumit'}
+# Print the dict in the output form {'Name': 'Sumit'}
 
 # .items gives the all key and value inside the dict
 
