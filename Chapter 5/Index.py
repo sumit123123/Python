@@ -7,7 +7,7 @@ In these Chapter we get learn about the Dictionary and the set
 
 dict :- {"Key":"Value"}
 
-set :- s = set() 
+set :- s = set{ items , items }
 
 3. Data inside the dict is keep in the key = value pair and no repeatation allowed in the set
 """
@@ -40,3 +40,31 @@ Syntax
 """
 # print(My_dict.get("Name"))
 
+
+# Set
+
+a = {1,2,3,3,2,1,5}
+
+# print(a)
+
+# Important empty {} did not give the type set it give type as Dictionary
+
+a = set()
+# print(type(a))
+
+# Adding items in the set
+
+a.add(72)
+# print(a)
+
+# We cannot add a list inside the set but we can add the tuple inside the set and dict also.
+
+# Mutable objects can only add into a set a list and a dict can be changed so 
+
+import pyttsx3
+
+engine = pyttsx3.init()
+
+engine.say("ahahahahahahahahahahahahahahahahahahahahahahahahahahahaha")
+
+engine.runAndWait()
