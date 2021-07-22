@@ -8,20 +8,28 @@ Number_2 = int(input("Enter the number:\n"))
 Number_3 = int(input("Enter the number:\n"))
 Number_4 = int(input("Enter the number:\n"))
 
-if (Number_1>Number_2 and Number_3 and Number_4):
-    print("Number 1 {} is greater from all the numbers".format(Number_1))
 
-elif (Number_2>Number_1 and Number_3 and Number_4):
-    print("Number 2 {} is greater from all the numbers".format(Number_2))
+Final_Number_1 = 0
 
-elif (Number_3>Number_2 and Number_1 and Number_4):
-    print("Number 3 {} is greater from all the numbers".format(Number_3))
+Final_Number_2 = 0
 
-elif (Number_4>Number_2 and Number_3 and Number_1):
-    print("Number 4 {} is greater from all the numbers".format(Number_4))
+if (Number_1>Number_2):
+    Final_Number_1 = Number_1
 
 else:
-    print("Something wrong input")
+    Final_Number_1 = Number_2
+
+if (Number_3>Number_4):
+    Final_Number_2 = Number_3
+
+else:
+    Final_Number_2 = Number_4
+
+if (Final_Number_1>Final_Number_2):
+    print(Final_Number_1," is the greatest of all")
+
+else:
+    print(Final_Number_2," is the greatest of all")
 
 Q-2 Give the output is student fail or pass assuming that their total percentage is above 40 and each subject above 33 percentage. Take marks as input
 
@@ -134,7 +142,7 @@ By using the article a, we’ve created a general statement, implying that any c
 
 Harry
 
-"""
+Solution - code
 
 if ("Harry" in Post):
     print("Yes their is harry in the post")
@@ -142,3 +150,24 @@ if ("Harry" in Post):
     print(Post.index("Harry"),"This is the index")
 else:
     print("No their is no harry in the post")
+"""
+
+Subject_1 = int(input("Enter the marks:\n"))
+Subject_2 = int(input("Enter the marks:\n"))
+Subject_3 = int(input("Enter the marks:\n"))
+
+total_subject_1_marks = Subject_1/100*80
+total_subject_2_marks = Subject_2/100*80
+total_subject_3_marks = Subject_3/100*80
+
+total_mark = Subject_1+Subject_2+Subject_3/100*240
+
+if (total_mark > 80):
+    print("You are pass your total score is {}".format(total_mark))
+    if (total_subject_1_marks and total_subject_2_marks and total_subject_3_marks >=40):
+        print("You are pass in all subject")
+    else:
+        print("You failed in a subject")
+
+else:
+    print("You got failed your total score is {}".format(total_mark))
