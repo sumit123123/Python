@@ -46,8 +46,50 @@ while i<5:
 
 blank_list = ["Sumit","Harry","Rohan","Sandesh","Ojas"]
 
-i = 0
+# i = 0
 
-while i<len(blank_list):
-    print(blank_list[i])
-    i = i + 1
+# while i<len(blank_list):
+#     print(blank_list[i])
+#     i = i + 1
+
+# Range
+
+# for i in range(0,8,2):
+#     print(i)
+
+# Step size use the gap between the start stop
+
+
+# For loop in using else break continue pass
+
+"""
+Using else is optoinal when the loop condition become false these else execute
+"""
+
+# Else
+"""
+for i in range(10):
+    print(i)
+
+else:
+    print("This is inside else of for")
+"""
+
+# Break
+
+"""
+for i in range(10):
+    if (i == 5):
+        print("I is 5")
+        break
+    else:
+        print(i)
+"""
+
+# continue
+"""
+for i in range(100):
+    if (i >= 5):
+        continue
+    print(i)
+"""
