@@ -7,9 +7,9 @@ from pygame import mixer
 import webbrowser as wb
 
 
-def Speaking(string_speak):
+def Speaking(string_speak,rate=None):
     engine = sound.init()
-    engine.setProperty("rate", 250)
+    engine.setProperty("rate", rate)
     engine.say(string_speak)
     engine.runAndWait()
 
@@ -31,16 +31,16 @@ def Greeting():
 
 def Search_wiki():
     
-    Speaking("What you want to search")
+    Speaking("What you want to search",rate=200)
     input_search = str(input("Enter here:\n"))
 
     try:
         search_text = wiki.summary(input_search)
-        Speaking(search_text)
+        Speaking(search_text,rate=175)
         print(search_text)
     except Exception as E:
         print(f"Please re-write the search no\nany searches found for\n{input_search}")
-# Search_wiki()
+Search_wiki()
 
 def Play_Music():
     path = r"C:\Users\Dell\Music\Playlists"
@@ -72,7 +72,7 @@ def Play_Music():
 
         
 
-Play_Music()
+# Play_Music()
 
 
 def Google_search():

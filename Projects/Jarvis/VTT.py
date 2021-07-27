@@ -1,10 +1,5 @@
-import speech_recognition as sr
+import wikipedia as wk
 
-r = sr.Recognizer()
+file = wk.page("Bill Gates")
 
-with sr.Microphone() as source:
-    text = r.listen(source)
-    r.pause_threshold = 1
-    r.energy_threshold = 50
-    convert = r.recognize_google(text)
-
+print(file.summary)
